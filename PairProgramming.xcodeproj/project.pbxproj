@@ -42,6 +42,7 @@
 		AC44F58820F06E2200C95DBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC44F59120F06F0000C95DBB /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		AC44F59420F06F4200C95DBB /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		AC44F59620F0723F00C95DBB /* PairProgrammingTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PairProgrammingTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		ADD73B08B65596DC3BA857B7 /* Pods-PairProgramming.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PairProgramming.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PairProgramming/Pods-PairProgramming.debug.xcconfig"; sourceTree = "<group>"; };
 		DC6CAADFE97F3C59A12035D6 /* Pods-PairProgrammingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PairProgrammingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PairProgrammingTests/Pods-PairProgrammingTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -124,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				AC44F58820F06E2200C95DBB /* Info.plist */,
+				AC44F59620F0723F00C95DBB /* PairProgrammingTests-Bridging-Header.h */,
 			);
 			path = PairProgrammingTests;
 			sourceTree = "<group>";
@@ -201,6 +203,7 @@
 					};
 					AC44F58320F06E2200C95DBB = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 						TestTargetID = AC44F56820F069E200C95DBB;
 					};
 				};
@@ -528,6 +531,7 @@
 			baseConfigurationReference = DC6CAADFE97F3C59A12035D6 /* Pods-PairProgrammingTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GCJRZ5LSTT;
 				INFOPLIST_FILE = PairProgrammingTests/Info.plist;
@@ -538,6 +542,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = CP.PairProgrammingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PairProgrammingTests/PairProgrammingTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PairProgramming.app/PairProgramming";
@@ -549,6 +555,7 @@
 			baseConfigurationReference = 7A5D4E0EE9E5D7F95B1717F5 /* Pods-PairProgrammingTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GCJRZ5LSTT;
 				INFOPLIST_FILE = PairProgrammingTests/Info.plist;
@@ -559,6 +566,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = CP.PairProgrammingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PairProgrammingTests/PairProgrammingTests-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PairProgramming.app/PairProgramming";
