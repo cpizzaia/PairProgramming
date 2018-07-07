@@ -1,5 +1,7 @@
 PODS:
   - Alamofire (4.7.2)
+  - Nimble (7.1.0)
+  - Quick (1.2.0)
   - SDWebImage (4.3.3):
     - SDWebImage/Core (= 4.3.3)
   - SDWebImage/Core (4.3.3)
@@ -7,20 +9,26 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - Nimble
+  - Quick
   - SDWebImage
   - SwiftyJSON
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
+    - Nimble
+    - Quick
     - SDWebImage
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  Nimble: 9c6651c3021af6de54c3ed90a4a0a87d548f7359
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
   SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: febc46d80870937dd97461d2370ea9119d2e357e
+PODFILE CHECKSUM: 0a0a85d5dce413c104ee2d0a1a4e1a89678a1edf
 
 COCOAPODS: 1.5.0
