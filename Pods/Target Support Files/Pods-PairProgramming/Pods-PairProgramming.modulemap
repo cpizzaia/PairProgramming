@@ -1,0 +1,6 @@
+framework module Pods_PairProgramming {
+  umbrella header "Pods-PairProgramming-umbrella.h"
+
+  export *
+  module * { export * }
+}
