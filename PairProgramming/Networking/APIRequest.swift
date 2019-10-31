@@ -20,13 +20,8 @@ class APIRequest {
     let body: JSON
   }
 
-  struct Response {
-    let statusCode: Int
-    let headers: JSON
-    let body: JSON
-  }
-
-  struct RequestParams {
+  // MARK: Private Types
+  private struct RequestParams {
     let url: String
     let method: HTTPMethod
     let body: Parameters?
@@ -77,14 +72,14 @@ class APIRequest {
   }
 
   private func handle(response: DataResponse<Any>, params: RequestParams) {
-    let json: JSON
-
-    do {
-      json = try JSON(data: response.data ?? Data())
-    } catch {
-      log("Couldnt parse data")
-      json = JSON()
-    }
+    let json: JSON = {
+      do {
+        return try JSON(data: response.data ?? Data())
+      } catch {
+        log("Couldnt parse data")
+        return JSON()
+      }
+    }()
 
     switch response.result {
     case .success:
@@ -92,7 +87,7 @@ class APIRequest {
       params.success(json)
 
     case .failure:
-      log("APIRequest -> FAILURE: \(params.url)")
+      log("APIRequest -> FAILURE: \(params.url), error was: \(json)")
       params.failure(.init(code: response.response?.statusCode ?? 400, body: json))
     }
   }
