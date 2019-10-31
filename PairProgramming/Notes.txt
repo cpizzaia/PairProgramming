@@ -2,7 +2,7 @@ We want to build a rudimentary display for newly released albums on Spotify and 
 click the album which will take use to a view with all the tracks
 
 Steps to do this:
-1. Get an Authoization token from Spotify
+1. Get an Authorization token from Spotify
 2. Get the newly released albums from Spotify
 3. When an album is pressed we want to get tracks for that album
 4. Navigate to a view with the tracks for that album
@@ -10,7 +10,7 @@ Steps to do this:
 Things we are looking for:
 1. Scalability (Is your architecture easily extendable)
 2. Maintainability (Is is easy for you and others to maintain in the advent of changes)
-3. Readability (Can others pick up your codebase and understand and be productive quickly while also easily noticing your design pattern)
+3. Readability (Can others pick up your codebase and understand and be productive quickly while also easily noticing your design patterns)
 
 IMPORTANT: we don't care if you finish at all (not even a problem if you don't make it halfway through it), we are only looking for the above first and foremost.
 
