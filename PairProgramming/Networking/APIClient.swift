@@ -1,5 +1,5 @@
 //
-//  APIRequest.swift
+//  APIClient.swift
 //  Stationhead
 //
 //  Created by Cody Pizzaia on 11/25/16.
@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
-struct APIRequest {
+struct APIClient {
   // MARK: Public Types
   typealias JSONResponse = (JSON) -> Void
   typealias ErrorResponse = (APIError) -> Void

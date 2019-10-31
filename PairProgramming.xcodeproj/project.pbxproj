@@ -14,7 +14,7 @@
 		AC44F57420F069E300C95DBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC44F57320F069E300C95DBB /* Assets.xcassets */; };
 		AC44F57720F069E300C95DBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC44F57520F069E300C95DBB /* LaunchScreen.storyboard */; };
 		AC44F59220F06F0000C95DBB /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC44F59120F06F0000C95DBB /* Globals.swift */; };
-		AC44F59520F06F4200C95DBB /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC44F59420F06F4200C95DBB /* APIRequest.swift */; };
+		AC44F59520F06F4200C95DBB /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC44F59420F06F4200C95DBB /* APIClient.swift */; };
 		ACA600B8236B4ECB0075EC39 /* Notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = ACA600B7236B4ECB0075EC39 /* Notes.txt */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +42,7 @@
 		AC44F58420F06E2200C95DBB /* PairProgrammingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PairProgrammingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC44F58820F06E2200C95DBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC44F59120F06F0000C95DBB /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
-		AC44F59420F06F4200C95DBB /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		AC44F59420F06F4200C95DBB /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		AC44F59620F0723F00C95DBB /* PairProgrammingTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PairProgrammingTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		ACA600B7236B4ECB0075EC39 /* Notes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Notes.txt; sourceTree = "<group>"; };
 		ADD73B08B65596DC3BA857B7 /* Pods-PairProgramming.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PairProgramming.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PairProgramming/Pods-PairProgramming.debug.xcconfig"; sourceTree = "<group>"; };
@@ -144,7 +144,7 @@
 		AC44F59320F06F3700C95DBB /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				AC44F59420F06F4200C95DBB /* APIRequest.swift */,
+				AC44F59420F06F4200C95DBB /* APIClient.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -330,7 +330,7 @@
 			files = (
 				AC44F56F20F069E200C95DBB /* ViewController.swift in Sources */,
 				AC44F56D20F069E200C95DBB /* AppDelegate.swift in Sources */,
-				AC44F59520F06F4200C95DBB /* APIRequest.swift in Sources */,
+				AC44F59520F06F4200C95DBB /* APIClient.swift in Sources */,
 				AC44F59220F06F0000C95DBB /* Globals.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
