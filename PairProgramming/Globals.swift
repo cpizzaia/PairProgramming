@@ -14,3 +14,8 @@ func log(_ message: String, functionName: String = #function, line: Int = #line,
 
   print(statement)
 }
+
+enum SpotifyData {
+  static let clientID = "55fd442d38ca4bb8b4a885435ca06bd9"
+  static let clientSecret = "0dcc7c42a9894627a224267726ce7339"
+}
