@@ -15,7 +15,7 @@
 		AC44F57720F069E300C95DBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC44F57520F069E300C95DBB /* LaunchScreen.storyboard */; };
 		AC44F59220F06F0000C95DBB /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC44F59120F06F0000C95DBB /* Globals.swift */; };
 		AC44F59520F06F4200C95DBB /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC44F59420F06F4200C95DBB /* APIRequest.swift */; };
-		ACA600B8236B4ECB0075EC39 /* Instructions.txt in Resources */ = {isa = PBXBuildFile; fileRef = ACA600B7236B4ECB0075EC39 /* Instructions.txt */; };
+		ACA600B8236B4ECB0075EC39 /* Notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = ACA600B7236B4ECB0075EC39 /* Notes.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,7 @@
 		AC44F59120F06F0000C95DBB /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		AC44F59420F06F4200C95DBB /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		AC44F59620F0723F00C95DBB /* PairProgrammingTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PairProgrammingTests-Bridging-Header.h"; sourceTree = "<group>"; };
-		ACA600B7236B4ECB0075EC39 /* Instructions.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Instructions.txt; sourceTree = "<group>"; };
+		ACA600B7236B4ECB0075EC39 /* Notes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Notes.txt; sourceTree = "<group>"; };
 		ADD73B08B65596DC3BA857B7 /* Pods-PairProgramming.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PairProgramming.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PairProgramming/Pods-PairProgramming.debug.xcconfig"; sourceTree = "<group>"; };
 		DC6CAADFE97F3C59A12035D6 /* Pods-PairProgrammingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PairProgrammingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PairProgrammingTests/Pods-PairProgrammingTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,7 +119,7 @@
 				AC44F57520F069E300C95DBB /* LaunchScreen.storyboard */,
 				AC44F57820F069E300C95DBB /* Info.plist */,
 				AC44F59120F06F0000C95DBB /* Globals.swift */,
-				ACA600B7236B4ECB0075EC39 /* Instructions.txt */,
+				ACA600B7236B4ECB0075EC39 /* Notes.txt */,
 			);
 			path = PairProgramming;
 			sourceTree = "<group>";
@@ -237,7 +237,7 @@
 			files = (
 				AC44F57720F069E300C95DBB /* LaunchScreen.storyboard in Resources */,
 				AC44F57420F069E300C95DBB /* Assets.xcassets in Resources */,
-				ACA600B8236B4ECB0075EC39 /* Instructions.txt in Resources */,
+				ACA600B8236B4ECB0075EC39 /* Notes.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
