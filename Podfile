@@ -3,14 +3,14 @@ platform :ios, '11.4'
 use_frameworks!
 
 def pods
-  pod 'Alamofire'
-  pod 'SwiftyJSON'
-  pod 'SDWebImage'
+  pod 'Alamofire', '4.9.1'
+  pod 'SwiftyJSON', '5.0.0'
+  pod 'SDWebImage', '5.2.5'
 end
 
 def testing_pods
-  pod 'Quick'
-  pod 'Nimble'
+  pod 'Quick', '2.2.0'
+  pod 'Nimble', '8.0.4'
 end
 
 target 'PairProgramming' do
