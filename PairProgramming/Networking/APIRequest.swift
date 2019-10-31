@@ -24,35 +24,77 @@ class APIRequest {
   private struct RequestParams {
     let url: String
     let method: HTTPMethod
-    let body: Parameters?
-    let headers: HTTPHeaders?
+    let body: Parameters
+    let encoding: ParameterEncoding
+    let headers: HTTPHeaders
     let success: JSONResponse
     let failure: ErrorResponse
   }
 
   // MARK: Public Methods
-  func get(url: String, headers: HTTPHeaders?, success: @escaping JSONResponse, failure: @escaping ErrorResponse) {
-    request(params: RequestParams(url: url, method: .get, body: nil, headers: headers, success: success, failure: failure))
-
+  func get(url: String, headers: HTTPHeaders = [:], encoding: ParameterEncoding = JSONEncoding.default, success: @escaping JSONResponse, failure: @escaping ErrorResponse) {
+    request(params: .init(
+      url: url,
+      method: .get,
+      body: [:],
+      encoding: encoding,
+      headers: headers,
+      success: success,
+      failure: failure
+      )
+    )
   }
 
-  func post(url: String, body: Parameters?, headers: HTTPHeaders?, success: @escaping JSONResponse, failure: @escaping ErrorResponse) {
-    request(params: RequestParams(url: url, method: .post, body: body, headers: headers, success: success, failure: failure))
-
+  func post(url: String, body: Parameters = [:], encoding: ParameterEncoding = JSONEncoding.default, headers: HTTPHeaders = [:], success: @escaping JSONResponse, failure: @escaping ErrorResponse) {
+    request(params: .init(
+      url: url,
+      method: .post,
+      body: body,
+      encoding: encoding,
+      headers: headers,
+      success: success,
+      failure: failure
+      )
+    )
   }
-  func delete(url: String, body: Parameters?, headers: HTTPHeaders?, success: @escaping JSONResponse, failure: @escaping ErrorResponse) {
-    request(params: RequestParams(url: url, method: .delete, body: body, headers: headers, success: success, failure: failure))
 
+  func delete(url: String, body: Parameters = [:], encoding: ParameterEncoding = JSONEncoding.default, headers: HTTPHeaders = [:], success: @escaping JSONResponse, failure: @escaping ErrorResponse) {
+    request(params: .init(
+      url: url,
+      method: .delete,
+      body: body,
+      encoding: encoding,
+      headers: headers,
+      success: success,
+      failure: failure
+      )
+    )
   }
 
-  func patch(url: String, body: Parameters?, headers: HTTPHeaders?, success: @escaping JSONResponse, failure: @escaping ErrorResponse) {
-    request(params: RequestParams(url: url, method: .patch, body: body, headers: headers, success: success, failure: failure))
-
+  func patch(url: String, body: Parameters = [:], encoding: ParameterEncoding = JSONEncoding.default, headers: HTTPHeaders = [:], success: @escaping JSONResponse, failure: @escaping ErrorResponse) {
+    request(params: .init(
+      url: url,
+      method: .patch,
+      body: body,
+      encoding: encoding,
+      headers: headers,
+      success: success,
+      failure: failure
+      )
+    )
   }
 
-  func put(url: String, body: Parameters?, headers: HTTPHeaders?, success: @escaping JSONResponse, failure: @escaping ErrorResponse) {
-    request(params: RequestParams(url: url, method: .put, body: body, headers: headers, success: success, failure: failure))
-
+  func put(url: String, body: Parameters = [:], encoding: ParameterEncoding = JSONEncoding.default, headers: HTTPHeaders = [:], success: @escaping JSONResponse, failure: @escaping ErrorResponse) {
+    request(params: .init(
+      url: url,
+      method: .put,
+      body: body,
+      encoding: encoding,
+      headers: headers,
+      success: success,
+      failure: failure
+      )
+    )
   }
 
   // MARK: Private Methods
@@ -63,7 +105,7 @@ class APIRequest {
       params.url,
       method: params.method,
       parameters: params.body,
-      encoding: JSONEncoding.default,
+      encoding: params.encoding,
       headers: params.headers
       ).validate().responseJSON(queue: DispatchQueue.global(), completionHandler: { response in
         self.handle(response: response, params: params)
