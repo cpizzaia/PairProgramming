@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
-class APIRequest {
+struct APIRequest {
   // MARK: Public Types
   typealias JSONResponse = (JSON) -> Void
   typealias ErrorResponse = (APIError) -> Void
