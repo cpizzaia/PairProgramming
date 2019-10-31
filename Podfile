@@ -6,6 +6,7 @@ def pods
   pod 'Alamofire', '4.9.1'
   pod 'SwiftyJSON', '5.0.0'
   pod 'SDWebImage', '5.2.5'
+  pod 'SnapKit', '5.0.1'
 end
 
 def testing_pods
