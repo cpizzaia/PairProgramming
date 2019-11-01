@@ -24,7 +24,7 @@ struct APIClient {
   private struct RequestParams {
     let url: String
     let method: HTTPMethod
-    let body: Parameters
+    let body: Parameters?
     let encoding: ParameterEncoding
     let headers: HTTPHeaders
     let success: JSONResponse
@@ -36,7 +36,7 @@ struct APIClient {
     request(params: .init(
       url: url,
       method: .get,
-      body: [:],
+      body: nil,
       encoding: encoding,
       headers: headers,
       success: success,
