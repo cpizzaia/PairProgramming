@@ -3,4 +3,68 @@
    uuid = "B5D67776-01AF-4211-BC31-826A4FE65DC8"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E4A0D692-F2C0-492D-9A6B-286D267AC692"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PairProgramming/Globals.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45">
+            <Locations>
+               <Location
+                  uuid = "E4A0D692-F2C0-492D-9A6B-286D267AC692 - 8216c81fad66b3df"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (SwiftyJSON.JSON) -&gt; () in closure #1 (Swift.String) -&gt; () in PairProgramming.TestViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "PairProgramming"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/codypizzaia/Desktop/PairProgramming/PairProgramming/Globals.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "E4A0D692-F2C0-492D-9A6B-286D267AC692 - 6f0835757445ac72"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (PairProgramming.APIClient.APIError) -&gt; () in closure #1 (Swift.String) -&gt; () in PairProgramming.TestViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "PairProgramming"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/codypizzaia/Desktop/PairProgramming/PairProgramming/Globals.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E4FEFDF4-0393-44F0-B872-F379EC506303"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PairProgramming/Networking/APIClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
+            landmarkName = "handle(response:params:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

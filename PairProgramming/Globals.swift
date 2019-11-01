@@ -7,8 +7,6 @@
 //
 
 import Foundation
-import UIKit
-import Alamofire
 
 func log(_ message: String, functionName: String = #function, line: Int = #line, fileName: String = #file) {
   let className: String = fileName.components(separatedBy: "/").last?.components(separatedBy: ".").first ?? ""
